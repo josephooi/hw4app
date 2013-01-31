@@ -1,0 +1,31 @@
+<h1>Listing conflicts</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>Reason</th>
+    <th>Singer</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @conflicts.each do |conflict| %>
+  <tr>
+    <td><%= conflict.date %></td>
+    <td><%= conflict.start %></td>
+    <td><%= conflict.end %></td>
+    <td><%= conflict.reason %></td>
+    <td><%= conflict.singer %></td>
+    <td><%= link_to 'Show', conflict %></td>
+    <td><%= link_to 'Edit', edit_conflict_path(conflict) %></td>
+    <td><%= link_to 'Destroy', conflict, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Conflict', new_conflict_path %>

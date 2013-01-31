@@ -1,0 +1,25 @@
+<h1>Listing singers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Voice part</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @singers.each do |singer| %>
+  <tr>
+    <td><%= singer.name %></td>
+    <td><%= singer.voice_part %></td>
+    <td><%= link_to 'Show', singer %></td>
+    <td><%= link_to 'Edit', edit_singer_path(singer) %></td>
+    <td><%= link_to 'Destroy', singer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Singer', new_singer_path %>

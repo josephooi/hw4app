@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2013-01-31
+  start: 2013-01-31 02:29:21
+  end: 2013-01-31 02:29:21
+  reason: MyString
+  singer: 
+
+two:
+  date: 2013-01-31
+  start: 2013-01-31 02:29:21
+  end: 2013-01-31 02:29:21
+  reason: MyString
+  singer: 

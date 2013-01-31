@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @voice_part.name %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @voice_part.size %>
+</p>
+
+
+<%= link_to 'Edit', edit_voice_part_path(@voice_part) %> |
+<%= link_to 'Back', voice_parts_path %>

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @conflict.date %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%= @conflict.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%= @conflict.end %>
+</p>
+
+<p>
+  <b>Reason:</b>
+  <%= @conflict.reason %>
+</p>
+
+<p>
+  <b>Singer:</b>
+  <%= @conflict.singer %>
+</p>
+
+
+<%= link_to 'Edit', edit_conflict_path(@conflict) %> |
+<%= link_to 'Back', conflicts_path %>
